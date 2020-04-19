@@ -1,8 +1,8 @@
+name: Deploy to Amazon ECR after release
+
 on:
   release:
     types: [created]
-
-name: Deploy to Amazon ECR
 
 jobs:
   deploy:
