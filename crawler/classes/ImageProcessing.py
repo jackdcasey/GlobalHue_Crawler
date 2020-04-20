@@ -6,7 +6,7 @@ from cv2 import cv2
 import numpy as np
 import requests, ffmpeg
 
-import os
+import os, logging
 
 def processPhotoSourceList(sourcelist: List[PhotoSource]) -> str:
 
@@ -20,7 +20,7 @@ def processPhotoSourceList(sourcelist: List[PhotoSource]) -> str:
             color = getAverageColor(imageArrCrop)
             colors.append(color)
         except:
-            print(f"Error getting color from: {source.Url}")
+            logging.error(f"Error getting color from: {source.Url}")
 
     if len(colors) == 0:
         raise ColorLookupError("Unable to determine color from all sources")
@@ -69,7 +69,7 @@ def getImageArrayFromFile(filename: str) -> np.ndarray:
 
 def getImageArrayFromUrl(url: str, kind: str) -> np.ndarray:
 
-    print(f"Opening {url} as {kind}")
+    logging.info(f"Opening {url} as {kind}")
 
     if kind == "Image":
 

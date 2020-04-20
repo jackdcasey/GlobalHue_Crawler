@@ -8,7 +8,7 @@ from datetime import timedelta
 
 import jsonpickle, schedule
 
-import os, time, datetime, uuid
+import os, time, datetime, uuid, logging
 
 DB_TABLE_CURRENT = 'GlobalHue_Current'
 DB_TABLE_HISTORY = 'GlobalHue_History'
@@ -16,6 +16,12 @@ DB_TABLE_HISTORY = 'GlobalHue_History'
 HISTORY_DAYS = 14
 
 INTERVAL_MIN = 15
+
+logging.basicConfig(
+    format="%(asctime)s %(message)s",
+    datefmt="%Y-%m-%dT%H:%M:%S%z",
+    level = logging.INFO
+)
 
 def main():
 
@@ -29,12 +35,12 @@ def main():
 
 def start():
 
-    print("Starting")
+    logging.info("Starting")
 
     cwd = os.path.dirname(os.path.abspath(__file__))
     citiesFile = os.path.join(cwd, 'cities.json')
 
-    print(f"Loading from {citiesFile}")
+    logging.info(f"Loading from {citiesFile}")
 
     cities = loadConfig(citiesFile)
 
@@ -44,14 +50,14 @@ def start():
 
     for city in cities:
 
-        print(city.Name)
+        logging.info(city.Name)
 
         success = True
 
         try:
             color = processPhotoSourceList(city.PhotoSourceList)
         except ColorLookupError as e:
-            print(e)
+            logging.error(e)
             success = False
             color = "#ffffff"
 
@@ -77,7 +83,7 @@ def start():
             }
         )
 
-    print("Exiting")
+    logging.info("Completed")
 
 def loadConfig(filePath) -> List[City]:
     with open(filePath, 'r') as f:
