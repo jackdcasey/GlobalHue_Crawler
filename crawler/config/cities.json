@@ -10,16 +10,7 @@
              "Kind":"Image",
              "Url":"http://webcam.visioncritical.com/webcam.jpg",
              "py/object":"classes.PhotoSource.PhotoSource"
-          },
-          {
-            "CropBottom":60,
-            "CropLeft":30,
-            "CropRight":0,
-            "CropTop":0,
-            "Kind":"Stream",
-            "Url":"https://use01-smr05-relay.ozolio.com/hls-live/relay01.srjtckf.fd0.sm1.av2.at0.sh2.rt16304.rc0.basic.stream/playlist.m3u8",
-            "py/object":"classes.PhotoSource.PhotoSource"
-         }
+          }
        ],
        "py/object":"classes.City.City"
     },
