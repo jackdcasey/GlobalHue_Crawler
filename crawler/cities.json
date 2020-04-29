@@ -62,7 +62,7 @@
             "CropRight":0,
             "CropTop":0,
             "Kind":"Image",
-            "Url":"https://api.deckchair.com/v1/viewer/image/5e9548060d7ba10001d1564e",
+            "Url":"https://www.robdev.org.uk/london_webcam/image.jpg",
             "py/object":"classes.PhotoSource.PhotoSource"
          }
       ],
