@@ -101,5 +101,6 @@ def getColorString(color: np.ndarray) -> str:
     return colorStr
 
 class ColorLookupError(Exception):
+
     def __init__(self, message):
         super().__init__(message)
