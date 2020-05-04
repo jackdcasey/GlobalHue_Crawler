@@ -37,7 +37,7 @@
             "CropLeft":0,
             "CropRight":0,
             "CropTop":0,
-            "Kind":"Stream",
+            "Kind":"Image",
             "Url":"http://www.weathercamnetwork.com.au/mcleans_ridges/982x737.jpg",
             "py/object":"classes.PhotoSource.PhotoSource"
          }
@@ -58,5 +58,20 @@
          }
       ],
       "py/object":"classes.City.City"
+   },
+   {
+   "Name":"New York",
+   "PhotoSourceList":[
+      {
+         "CropBottom":70,
+         "CropLeft":0,
+         "CropRight":20,
+         "CropTop":6,
+         "Kind":"Image",
+         "Url":"https://www.511ny.org/map/Cctv/4616602--17",
+         "py/object":"classes.PhotoSource.PhotoSource"
+      }
+   ],
+   "py/object":"classes.City.City"
    }
 ]
