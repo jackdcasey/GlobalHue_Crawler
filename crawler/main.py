@@ -40,7 +40,7 @@ def start():
 
     logging.info("Starting")
 
-    cities = loadConfig('cities.json')
+    cities = loadConfig('cities.json', False)
 
     runtime = datetime.datetime.utcnow()
     displaytime = runtime.replace(tzinfo=datetime.timezone.utc).replace(microsecond=0).isoformat()
@@ -83,10 +83,16 @@ def start():
 
     logging.info("Completed")
 
-def loadConfig(filename) -> List[City]:
+def loadConfig(filename: str, local: bool) -> List[City]:
 
-    rawconfig = getFileFromS3(CONFIG_BUCKET, filename)
-    return jsonpickle.decode(rawconfig)
+    if (local):
+        cwd = os.path.dirname(os.path.abspath(__file__))
+        citiesFile = os.path.join(cwd, 'config/cities.json')
+        with open(citiesFile, 'r') as f:
+            return jsonpickle.decode(f.read())
+    else:
+        rawconfig = getFileFromS3(CONFIG_BUCKET, filename)
+        return jsonpickle.decode(rawconfig)
 
 
 if __name__ == '__main__':
