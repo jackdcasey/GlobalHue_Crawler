@@ -78,5 +78,37 @@
       }
    ],
    "py/object":"classes.City.City"
+   },
+   {
+      "Name":"Tokyo",
+      "TimezoneURL": "http://worldtimeapi.org/api/timezone/Asia/Tokyo",
+      "PhotoSourceList":[
+         {
+            "CropBottom":75,
+            "CropLeft":0,
+            "CropRight":0,
+            "CropTop":0,
+            "Kind":"Image",
+            "Url":"https://www.ktr.mlit.go.jp/arage/live-camera/shinsuna.jpg",
+            "py/object":"classes.PhotoSource.PhotoSource"
+         }
+      ],
+      "py/object":"classes.City.City"
+   },
+   {
+      "Name":"Berlin",
+      "TimezoneURL": "http://worldtimeapi.org/api/timezone/Europe/Berlin",
+      "PhotoSourceList":[
+         {
+            "CropBottom":60,
+            "CropLeft":0,
+            "CropRight":0,
+            "CropTop":5,
+            "Kind":"Image",
+            "Url":"http://berlin-webcam.illustriertestadt.de/actual/actual_pic.jpg",
+            "py/object":"classes.PhotoSource.PhotoSource"
+         }
+      ],
+      "py/object":"classes.City.City"
    }
 ]
