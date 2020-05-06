@@ -7,7 +7,7 @@ from classes.s3 import getFileFromS3
 from typing import List
 from datetime import timedelta
 
-import jsonpickle, schedule
+import jsonpickle, schedule, requests
 
 import os, time, datetime, uuid, logging
 
@@ -50,6 +50,8 @@ def start():
 
         logging.info(city.Name)
 
+        timezonedata = requests.get(city.TimezoneURL).json()
+
         success = True
 
         try:
@@ -63,7 +65,7 @@ def start():
             DB_TABLE_CURRENT,
             {
                 'city': city.Name,
-                'timezoneurl': city.TimezoneURL,
+                'timedata': timezonedata,
                 'color': color,
                 'success': success,
                 'capturetime': displaytime
