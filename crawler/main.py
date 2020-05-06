@@ -63,6 +63,7 @@ def start():
             DB_TABLE_CURRENT,
             {
                 'city': city.Name,
+                'timezoneurl': city.TimezoneURL,
                 'color': color,
                 'success': success,
                 'capturetime': displaytime

@@ -1,6 +1,7 @@
 [
     {
        "Name":"Vancouver",
+       "TimezoneURL": "http://worldtimeapi.org/api/timezone/America/Vancouver",
        "PhotoSourceList":[
           {
              "CropBottom":70,
@@ -16,6 +17,7 @@
     },
     {
        "Name":"Seattle",
+       "TimezoneURL": "http://worldtimeapi.org/api/timezone/America/Vancouver",
        "PhotoSourceList":[
           {
              "CropBottom":70,
@@ -31,6 +33,7 @@
     },
     {
       "Name":"Sydney",
+      "TimezoneURL": "http://worldtimeapi.org/api/timezone/Australia/Sydney",
       "PhotoSourceList":[
          {
             "CropBottom":70,
@@ -46,6 +49,7 @@
    },
    {
       "Name":"London",
+      "TimezoneURL": "http://worldtimeapi.org/api/timezone/Europe/London",
       "PhotoSourceList":[
          {
             "CropBottom":55,
@@ -61,6 +65,7 @@
    },
    {
    "Name":"New York",
+   "TimezoneURL": "http://worldtimeapi.org/api/timezone/America/New_York",
    "PhotoSourceList":[
       {
          "CropBottom":70,
