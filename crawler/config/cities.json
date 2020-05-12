@@ -68,10 +68,10 @@
    "TimezoneURL": "http://worldtimeapi.org/api/timezone/America/New_York",
    "PhotoSourceList":[
       {
-         "CropBottom":70,
+         "CropBottom":80,
          "CropLeft":0,
-         "CropRight":20,
-         "CropTop":6,
+         "CropRight":0,
+         "CropTop":0,
          "Kind":"Stream",
          "Url":"https://hddn01.skylinewebcams.com/live.m3u8?a=t10db7ctgkeo01nvfeo11e15k1",
          "py/object":"classes.PhotoSource.PhotoSource"
