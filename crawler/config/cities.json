@@ -11,7 +11,16 @@
              "Kind":"Image",
              "Url":"http://webcam.visioncritical.com/webcam.jpg",
              "py/object":"classes.PhotoSource.PhotoSource"
-          }
+          },
+          {
+            "CropBottom":60,
+            "CropLeft":20,
+            "CropRight":0,
+            "CropTop":0,
+            "Kind":"Image",
+            "Url":"http://www.vancam.ca/vancam.jpg",
+            "py/object":"classes.PhotoSource.PhotoSource"
+         }
        ],
        "py/object":"classes.City.City"
     },
