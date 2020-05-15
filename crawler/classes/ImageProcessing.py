@@ -20,7 +20,7 @@ def processPhotoSourceList(sourcelist: List[PhotoSource]) -> str:
             color = getAverageColor(imageArrCrop)
             colors.append(color)
         except:
-            logging.error(f"Error getting color from: {source.Url}")
+            logging.error(f"Error loading color from: {source.Url}")
 
     if len(colors) == 0:
         raise ColorLookupError("Unable to determine color from all sources")
