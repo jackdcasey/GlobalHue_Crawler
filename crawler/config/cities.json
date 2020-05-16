@@ -29,7 +29,7 @@
        "TimezoneURL": "http://worldtimeapi.org/api/timezone/America/Vancouver",
        "PhotoSourceList":[
           {
-             "CropBottom":70,
+             "CropBottom":72,
              "CropLeft":0,
              "CropRight":0,
              "CropTop":0,
