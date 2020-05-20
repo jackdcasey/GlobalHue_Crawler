@@ -119,5 +119,21 @@
          }
       ],
       "py/object":"classes.City.City"
+   },
+   {
+      "Name":"Rio De Janeiro",
+      "TimezoneURL": "http://worldtimeapi.org/api/timezone/America/Sao_Paulo",
+      "PhotoSourceList":[
+         {
+            "CropBottom":50,
+            "CropLeft":0,
+            "CropRight":0,
+            "CropTop":0,
+            "Kind":"Image",
+            "Url":"http://www.aeropuerto-caracas-omz.com/weather/sur.jpg",
+            "py/object":"classes.PhotoSource.PhotoSource"
+         }
+      ],
+      "py/object":"classes.City.City"
    }
 ]
